@@ -1,6 +1,8 @@
 package org.example;
 
-public class Paciente {
+import java.util.Observable;
+
+public class Paciente extends Observable {
 
     private PacienteEstado estado;
 
@@ -13,15 +15,23 @@ public class Paciente {
     }
 
     public boolean morrer(){
+        setChanged();
+        notifyObservers();
         return estado.morrer(this);
     }
     public boolean viver(){
+        setChanged();
+        notifyObservers();
         return estado.viver(this);
     }
     public boolean ficarInstavel(){
+        setChanged();
+        notifyObservers();
         return estado.ficarInstavel(this);
     }
     public boolean ficarEstavel(){
+        setChanged();
+        notifyObservers();
         return estado.ficarEstavel(this);
     }
 }
