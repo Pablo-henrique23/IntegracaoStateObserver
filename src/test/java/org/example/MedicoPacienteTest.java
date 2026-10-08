@@ -15,8 +15,7 @@ public class MedicoPacienteTest {
 
         paciente.ficarInstavel();
 
-        assertEquals("Paciente: Joao foi para o estado Instavel.", medico.getUltimaNotificacao()
-        );
+        assertEquals("Paciente: Joao foi para o estado Instavel.", medico.getUltimaNotificacao());
     }
 
     @Test
@@ -28,8 +27,7 @@ public class MedicoPacienteTest {
 
         paciente.ficarEstavel();
 
-        assertEquals("Paciente: Joao foi para o estado Estavel.", medico.getUltimaNotificacao()
-        );
+        assertEquals("Paciente: Joao foi para o estado Estavel.", medico.getUltimaNotificacao());
     }
 
     @Test
@@ -41,8 +39,7 @@ public class MedicoPacienteTest {
 
         paciente.morrer();
 
-        assertEquals("Paciente: Joao foi para o estado Morto.", medico.getUltimaNotificacao()
-        );
+        assertEquals("Paciente: Joao foi para o estado Morto.", medico.getUltimaNotificacao());
     }
 
     @Test
@@ -54,13 +51,11 @@ public class MedicoPacienteTest {
 
         paciente.ficarInstavel();
 
-        assertEquals("Paciente: Joao foi para o estado Instavel.", medico.getUltimaNotificacao()
-        );
+        assertEquals("Paciente: Joao foi para o estado Instavel.", medico.getUltimaNotificacao());
 
         paciente.ficarEstavel();
 
-        assertEquals("Paciente: Joao foi para o estado Estavel.", medico.getUltimaNotificacao()
-        );
+        assertEquals("Paciente: Joao foi para o estado Estavel.", medico.getUltimaNotificacao());
     }
 
     @Test
@@ -75,12 +70,10 @@ public class MedicoPacienteTest {
 
         paciente1.ficarInstavel();
 
-        assertEquals("Paciente: Joao foi para o estado Instavel.", medico.getUltimaNotificacao()
-        );
+        assertEquals("Paciente: Joao foi para o estado Instavel.", medico.getUltimaNotificacao());
 
         paciente2.morrer();
 
-        assertEquals("Paciente: Maria foi para o estado Morto.", medico.getUltimaNotificacao()
-        );
+        assertEquals("Paciente: Maria foi para o estado Morto.", medico.getUltimaNotificacao());
     }
 }

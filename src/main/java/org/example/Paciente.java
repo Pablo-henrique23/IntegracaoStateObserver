@@ -21,27 +21,27 @@ public class Paciente extends Observable {
     }
 
     public boolean morrer(){
-        estado.morrer(this);
+        boolean state = estado.morrer(this);
         setChanged();
         notifyObservers();
-        return estado.morrer(this);
+        return state;
     }
     public boolean viver(){
-        estado.viver(this);
+        boolean state = estado.viver(this);
         setChanged();
         notifyObservers();
-        return estado.viver(this);
+        return state;
     }
     public boolean ficarInstavel(){
-        estado.ficarInstavel(this);
+        boolean state = estado.ficarInstavel(this);
         setChanged();
         notifyObservers();
-        return estado.ficarInstavel(this);
+        return state;
     }
     public boolean ficarEstavel(){
-        estado.ficarEstavel(this);
+        boolean state = estado.ficarEstavel(this);
         setChanged();
         notifyObservers();
-        return estado.ficarEstavel(this);
+        return state;
     }
 }
